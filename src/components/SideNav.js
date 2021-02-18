@@ -7,12 +7,17 @@ const SideNav = () => {
     <ul className="menu-list">
       <Link to="/chat">
         <li className={`${pathname === "/chat" ? "is-active" : ""}`}>
-          chat-app
+          Chat App
         </li>
       </Link>
       <Link to="/comment">
         <li className={`${pathname === "/comment" ? "is-active" : ""}`}>
           Comment Box
+        </li>
+      </Link>
+      <Link to="/tab-selector">
+        <li className={`${pathname === "/tab-selector" ? "is-active" : ""}`}>
+          Tab Selector
         </li>
       </Link>
     </ul>

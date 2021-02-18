@@ -3,6 +3,7 @@ import Home from "./pages/Home";
 import ChatApp from "./pages/ChatApp";
 import SideNav from "./components/SideNav";
 import CommentBox from "./pages/CommentBox";
+import TabSelector from "./pages/TabSelector";
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
@@ -16,6 +17,7 @@ function App() {
           <Route path="/" exact component={Home} />
           <Route path="/chat" component={ChatApp} />
           <Route path="/comment" component={CommentBox} />
+          <Route path="/tab-selector" component={TabSelector} />
         </Switch>
       </div>
     </Router>
