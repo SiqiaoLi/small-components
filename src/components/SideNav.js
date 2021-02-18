@@ -10,6 +10,11 @@ const SideNav = () => {
           chat-app
         </li>
       </Link>
+      <Link to="/comment">
+        <li className={`${pathname === "/comment" ? "is-active" : ""}`}>
+          Comment Box
+        </li>
+      </Link>
     </ul>
   );
 };

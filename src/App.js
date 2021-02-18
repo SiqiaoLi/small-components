@@ -2,7 +2,8 @@ import GlobalStyles from "./components/GlobalStyles";
 import Home from "./pages/Home";
 import ChatApp from "./pages/ChatApp";
 import SideNav from "./components/SideNav";
-import React, { useState } from "react";
+import CommentBox from "./pages/CommentBox";
+import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/chat" component={ChatApp} />
+          <Route path="/comment" component={CommentBox} />
         </Switch>
       </div>
     </Router>
