@@ -3,13 +3,14 @@ import { createGlobalStyle } from "styled-components";
 const GlobalStyles = createGlobalStyle`
   *{
     margin: 0;
-    padding: 7px;
+    padding: 0px;
     box-sizing: border-box;
   }
 
   .App{
     font-family: sans-serif;
     padding-left: 250px;
+    padding-top: 20px;
   }
 
   .menu-list {
@@ -22,8 +23,9 @@ const GlobalStyles = createGlobalStyle`
     background-color: #eee;
     padding: 0;
     margin: 0;
-    padding-top: 30px;
+    padding-top: 20px;
     overflow: auto;
+    
     li{
       padding: 5px 15px;
       color: #2175bc;

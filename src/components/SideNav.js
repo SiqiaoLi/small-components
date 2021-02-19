@@ -20,6 +20,9 @@ const SideNav = () => {
           Tab Selector
         </li>
       </Link>
+      <Link to="/clock">
+        <li className={`${pathname === "/clock" ? "is-active" : ""}`}>Clock</li>
+      </Link>
     </ul>
   );
 };
