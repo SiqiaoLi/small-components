@@ -5,6 +5,8 @@ import SideNav from "./components/SideNav";
 import CommentBox from "./pages/CommentBox";
 import TabSelector from "./pages/TabSelector";
 import Clock from "./pages/Clock";
+import Snapshot from "./pages/Snapshot";
+import { AdvancedTabSelectorSample } from "./pages/AdvancedTabSelector";
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
@@ -20,6 +22,11 @@ function App() {
           <Route path="/comment" component={CommentBox} />
           <Route path="/tab-selector" component={TabSelector} />
           <Route path="/clock" component={Clock} />
+          <Route path="/snapshot" component={Snapshot} />
+          <Route
+            path="/advanced-tab-selector"
+            component={AdvancedTabSelectorSample}
+          />
         </Switch>
       </div>
     </Router>

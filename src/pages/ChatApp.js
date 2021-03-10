@@ -19,8 +19,11 @@ const ChatApp = () => {
 
   return (
     <div>
+      <h1>Chat App</h1>
       <div>
-        <input value={inputMsg} onChange={handleInput} />
+        <label htmlFor="chat">Say something</label>
+        <br />
+        <input id="chat" value={inputMsg} onChange={handleInput} />
         <button onClick={handleSend}>Send</button>
       </div>
       <MessageList messages={messages} />

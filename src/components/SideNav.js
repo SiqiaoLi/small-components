@@ -23,6 +23,20 @@ const SideNav = () => {
       <Link to="/clock">
         <li className={`${pathname === "/clock" ? "is-active" : ""}`}>Clock</li>
       </Link>
+      <Link to="/snapshot">
+        <li className={`${pathname === "/snapshot" ? "is-active" : ""}`}>
+          Snapshot
+        </li>
+      </Link>
+      <Link to="/advanced-tab-selector">
+        <li
+          className={`${
+            pathname === "/advanced-tab-selector" ? "is-active" : ""
+          }`}
+        >
+          Advanced-tab-selector
+        </li>
+      </Link>
     </ul>
   );
 };
