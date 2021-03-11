@@ -37,6 +37,11 @@ const SideNav = () => {
           Advanced-tab-selector
         </li>
       </Link>
+      <Link to="/nested-route">
+        <li className={`${pathname === "/nested-route" ? "is-active" : ""}`}>
+          Nested-route
+        </li>
+      </Link>
     </ul>
   );
 };

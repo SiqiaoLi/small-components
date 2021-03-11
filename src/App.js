@@ -7,6 +7,7 @@ import TabSelector from "./pages/TabSelector";
 import Clock from "./pages/Clock";
 import Snapshot from "./pages/Snapshot";
 import { AdvancedTabSelectorSample } from "./pages/AdvancedTabSelector";
+import NestedRoute from "./pages/NestedRoute";
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
@@ -27,6 +28,7 @@ function App() {
             path="/advanced-tab-selector"
             component={AdvancedTabSelectorSample}
           />
+          <Route path="/nested-route" component={NestedRoute} />
         </Switch>
       </div>
     </Router>
