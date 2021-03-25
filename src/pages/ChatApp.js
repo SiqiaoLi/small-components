@@ -21,7 +21,7 @@ const ChatApp = () => {
     <div>
       <h1>Chat App test</h1>
       <div>
-        <label htmlFor="chat">Say something</label>
+        <label htmlFor="chat">Say something to your friends</label>
         <br />
         <input id="chat" value={inputMsg} onChange={handleInput} />
         <button onClick={handleSend}>Send</button>
