@@ -19,7 +19,7 @@ const ChatApp = () => {
 
   return (
     <div>
-      <h1>Chat App</h1>
+      <h1>Chat App test</h1>
       <div>
         <label htmlFor="chat">Say something</label>
         <br />
