@@ -4,6 +4,7 @@ const ChatApp = () => {
   const [messages, setMessages] = useState([]);
   const [inputMsg, setInputMsg] = useState("");
 
+  // handler for input
   const handleInput = (e) => {
     setInputMsg(e.target.value);
   };
@@ -33,6 +34,7 @@ const ChatApp = () => {
   );
 };
 
+// a message list component
 const MessageList = (props) => {
   return (
     <ul>
