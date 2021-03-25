@@ -8,8 +8,10 @@ const ChatApp = () => {
     setInputMsg(e.target.value);
   };
 
+  // a handler for send messages
   const handleSend = () => {
     const text = inputMsg;
+
     if (text) {
       const newMessages = [...messages, text];
       setMessages(newMessages);
@@ -19,7 +21,7 @@ const ChatApp = () => {
 
   return (
     <div>
-      <h1>Chat App</h1>
+      <h1>Chat App test</h1>
       <div>
         <label htmlFor="chat">Say something to your friends!</label>
         <br />
