@@ -42,6 +42,16 @@ const SideNav = () => {
           Nested-route
         </li>
       </Link>
+      <Link to="/useCallback">
+        <li className={`${pathname === "/useCallback" ? "is-active" : ""}`}>
+          useCallback
+        </li>
+      </Link>
+      <Link to="/useMemo">
+        <li className={`${pathname === "/useMemo" ? "is-active" : ""}`}>
+          useMemo
+        </li>
+      </Link>
     </ul>
   );
 };

@@ -8,6 +8,8 @@ import Clock from "./pages/Clock";
 import Snapshot from "./pages/Snapshot";
 import { AdvancedTabSelectorSample } from "./pages/AdvancedTabSelector";
 import NestedRoute from "./pages/NestedRoute";
+import UseCallback from "./pages/UseCallback";
+import UseMemo from "./pages/UseMemo";
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
@@ -29,6 +31,8 @@ function App() {
             component={AdvancedTabSelectorSample}
           />
           <Route path="/nested-route" component={NestedRoute} />
+          <Route path="/useCallback" component={UseCallback} />
+          <Route path="/useMemo" component={UseMemo} />
         </Switch>
       </div>
     </Router>
