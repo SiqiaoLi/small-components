@@ -6,12 +6,17 @@ const UseCallback = () => {
 
   // only when number changes, the function will be excuted
   // useCallback return a function and useMemo just return a value
-  const getItems = useCallback(
-    (incrementor) => {
-      return [number, number + incrementor, number + 2 + incrementor];
-    },
-    [number]
-  );
+  // const getItems = useCallback(
+  //   (incrementor) => {
+  //     return [number, number + incrementor, number + 2 + incrementor];
+  //   },
+  //   [number]
+  // );
+
+  const getItems = (incrementor) => {
+    console.log("getItems");
+    return [number, number + incrementor, number + 2 + incrementor];
+  };
 
   const theme = {
     backgroundColor: dark ? "#333" : "#FFF",
