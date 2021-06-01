@@ -3,7 +3,7 @@ const CommentItem = ({ comment }) => {
     <div className="comment-item">
       <span className="avatar" />
       <a href="#">{comment.author}</a>
-      <p>{comment.content}</p>
+      <p className="comment-text">{comment.content}</p>
     </div>
   );
 };

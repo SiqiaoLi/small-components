@@ -52,6 +52,9 @@ const SideNav = () => {
           useMemo
         </li>
       </Link>
+      <Link to="/timer">
+        <li className={`${pathname === "/timer" ? "is-active" : ""}`}>Timer</li>
+      </Link>
     </ul>
   );
 };

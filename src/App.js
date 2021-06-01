@@ -6,6 +6,7 @@ import CommentBox from "./pages/CommentBox";
 import TabSelector from "./pages/TabSelector";
 import Clock from "./pages/Clock";
 import Snapshot from "./pages/Snapshot";
+import Timer from "./pages/Timer";
 import { AdvancedTabSelectorSample } from "./pages/AdvancedTabSelector";
 import NestedRoute from "./pages/NestedRoute";
 import UseCallback from "./pages/UseCallback";
@@ -33,6 +34,7 @@ function App() {
           <Route path="/nested-route" component={NestedRoute} />
           <Route path="/useCallback" component={UseCallback} />
           <Route path="/useMemo" component={UseMemo} />
+          <Route path="/timer" component={Timer} />
         </Switch>
       </div>
     </Router>
