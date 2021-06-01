@@ -8,6 +8,7 @@ import Clock from "./pages/Clock";
 import Snapshot from "./pages/Snapshot";
 import Timer from "./pages/Timer";
 import { AdvancedTabSelectorSample } from "./pages/AdvancedTabSelector";
+import Search from "./pages/Search";
 import NestedRoute from "./pages/NestedRoute";
 import UseCallback from "./pages/UseCallback";
 import UseMemo from "./pages/UseMemo";
@@ -35,6 +36,7 @@ function App() {
           <Route path="/useCallback" component={UseCallback} />
           <Route path="/useMemo" component={UseMemo} />
           <Route path="/timer" component={Timer} />
+          <Route path="/search" component={Search} />
         </Switch>
       </div>
     </Router>

@@ -55,6 +55,11 @@ const SideNav = () => {
       <Link to="/timer">
         <li className={`${pathname === "/timer" ? "is-active" : ""}`}>Timer</li>
       </Link>
+      <Link to="/search">
+        <li className={`${pathname === "/search" ? "is-active" : ""}`}>
+          Search
+        </li>
+      </Link>
     </ul>
   );
 };

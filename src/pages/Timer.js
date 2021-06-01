@@ -1,6 +1,6 @@
 import React, { useState, useCallback, useRef } from "react";
 
-function Timer() {
+export default function Timer() {
   // 定义 time state 用于保存计时的累积时间
   const [time, setTime] = useState(0);
 
@@ -11,24 +11,23 @@ function Timer() {
   const handleStart = useCallback(() => {
     // 使用 current 属性设置 ref 的值
     timer.current = window.setInterval(() => {
-      setTime(time + 1);
-    });
-  }, [time]);
+      setTime((time) => time + 1);
+    }, 100);
+  }, []);
 
   // 暂停计时的事件处理函数
   const handlePause = useCallback(() => {
     // 使用 clearInterval 来停止计时
     window.clearInterval(timer.current);
     timer.current = null;
-  });
+  }, []);
 
   return (
     <div>
-      {time} seconds.
+      {time / 10} seconds.
+      <br />
       <button onClick={handleStart}>Start</button>
       <button onClick={handlePause}>Pause</button>
     </div>
   );
 }
-
-export default Timer;
