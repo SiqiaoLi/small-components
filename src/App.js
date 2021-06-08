@@ -12,6 +12,7 @@ import Search from "./pages/Search";
 import NestedRoute from "./pages/NestedRoute";
 import UseCallback from "./pages/UseCallback";
 import UseMemo from "./pages/UseMemo";
+import CustomHook from "./pages/CustomHook";
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
@@ -37,6 +38,7 @@ function App() {
           <Route path="/useMemo" component={UseMemo} />
           <Route path="/timer" component={Timer} />
           <Route path="/search" component={Search} />
+          <Route path="/customHook" component={CustomHook} />
         </Switch>
       </div>
     </Router>

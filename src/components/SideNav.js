@@ -60,6 +60,11 @@ const SideNav = () => {
           Search
         </li>
       </Link>
+      <Link to="/customHook">
+        <li className={`${pathname === "/customHook" ? "is-active" : ""}`}>
+          CustomHook
+        </li>
+      </Link>
     </ul>
   );
 };
