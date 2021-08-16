@@ -5,6 +5,16 @@ const SideNav = () => {
 
   return (
     <ul className="menu-list">
+      <Link to="/counter">
+        <li className={`${pathname === "/counter" ? "is-active" : ""}`}>
+          Counter
+        </li>
+      </Link>
+      <Link to="/userList">
+        <li className={`${pathname === "/userList" ? "is-active" : ""}`}>
+          UserList
+        </li>
+      </Link>
       <Link to="/chat">
         <li className={`${pathname === "/chat" ? "is-active" : ""}`}>
           Chat App
@@ -60,9 +70,24 @@ const SideNav = () => {
           Search
         </li>
       </Link>
+      <Link to="/debounce">
+        <li className={`${pathname === "/debounce" ? "is-active" : ""}`}>
+          Debounce search
+        </li>
+      </Link>
       <Link to="/customHook">
         <li className={`${pathname === "/customHook" ? "is-active" : ""}`}>
           CustomHook
+        </li>
+      </Link>
+      <Link to="/useScroll">
+        <li className={`${pathname === "/useScroll" ? "is-active" : ""}`}>
+          UseScroll
+        </li>
+      </Link>
+      <Link to="/reactLoadable">
+        <li className={`${pathname === "/reactLoadable" ? "is-active" : ""}`}>
+          ReactLoadable
         </li>
       </Link>
     </ul>

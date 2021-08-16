@@ -13,6 +13,12 @@ import NestedRoute from "./pages/NestedRoute";
 import UseCallback from "./pages/UseCallback";
 import UseMemo from "./pages/UseMemo";
 import CustomHook from "./pages/CustomHook";
+import UseScroll from "./pages/UseScroll";
+import Debounce from "./pages/Debounce";
+import ReactLoadable from "./pages/ReactLoadable";
+import Counter from "./pages/Counter";
+import UserList from "./pages/UserList";
+
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
@@ -24,6 +30,7 @@ function App() {
         <SideNav />
         <Switch>
           <Route path="/" exact component={Home} />
+          <Route path="/userList" component={UserList} />
           <Route path="/chat" component={ChatApp} />
           <Route path="/comment" component={CommentBox} />
           <Route path="/tab-selector" component={TabSelector} />
@@ -39,6 +46,10 @@ function App() {
           <Route path="/timer" component={Timer} />
           <Route path="/search" component={Search} />
           <Route path="/customHook" component={CustomHook} />
+          <Route path="/useScroll" component={UseScroll} />
+          <Route path="/debounce" component={Debounce} />
+          <Route path="/reactLoadable" component={ReactLoadable} />
+          <Route path="/counter" component={Counter} />
         </Switch>
       </div>
     </Router>
